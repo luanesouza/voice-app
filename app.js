@@ -1,5 +1,7 @@
 
 const talkButton = document.querySelector('.talk')
+const increasePitchButton = document.querySelector('.increasePitch')
+const decreasePitchButton = document.querySelector('.decreasePitch')
 
 const SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
 
@@ -24,7 +26,7 @@ talkButton.addEventListener('click', () => {
   recognition.start();
 })
 
-const readOutLoud = (message) => {
+const readOutLoud = (message, pitch, rate) => {
   const speech = new SpeechSynthesisUtterance
   speech.text = personalizedAnswers(message);
   speech.volume = 1;
