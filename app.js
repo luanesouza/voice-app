@@ -37,7 +37,7 @@ const readOutLoud = (message, pitch, rate) => {
 }
 
 const personalizedAnswers = (message) => {
-  let arrayOfGreetings = ['I am well. How are you feeling?', 'It is a nice day out. What are you doing talking to me? Go for a walk.']
+  let arrayOfGreetings = ['I am well, but why do you care?', ' before May', 'Look around. What do you think I am feeling?', 'Like you care', 'It is a nice day out. What are you doing talking to me? Go for a walk', '']
 
 
   if(message.includes('how are you')) {
